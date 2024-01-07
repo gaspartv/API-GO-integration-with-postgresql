@@ -7,6 +7,7 @@ import (
 	"strconv"
 
 	"github.com/gaspartv/API-GO-integration-with-postgresql/models"
+	"github.com/go-chi/chi"
 )
 
 func Get(w http.ResponseWriter, r *http.Request) {
