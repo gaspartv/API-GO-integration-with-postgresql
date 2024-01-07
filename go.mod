@@ -2,10 +2,7 @@ module github.com/gaspartv/API-GO-integration-with-postgresql
 
 go 1.21
 
-require (
-	github.com/go-chi/chi v1.5.5
-	github.com/spf13/viper v1.18.2
-)
+require github.com/spf13/viper v1.18.2
 
 require (
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
