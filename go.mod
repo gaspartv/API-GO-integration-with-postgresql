@@ -1,6 +1,6 @@
 module github.com/gaspartv/API-GO-integration-with-postgresql
 
-go 1.18
+go 1.21
 
 require (
 	github.com/go-chi/chi v1.5.5

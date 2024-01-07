@@ -19,8 +19,13 @@ func main() {
 	r.Post("/", handlers.Create)
 	r.Put("/{id}", handlers.Update)
 	r.Delete("/{id}", handlers.Delete)
-	r.Get("/", handlers.List)
+	r.Get("/list", handlers.List)
 	r.Get("/{id}", handlers.Get)
 
-	http.ListenAndServe(fmt.Sprintf(":s", configs.GetServerPort()), r)
+	// fmt.Println("Servidor escutando na porta 9000")
+	// err = http.ListenAndServe(":9000", nil)
+	// if err != nil {
+	// 	fmt.Println("Erro ao iniciar o servidor:", err)
+	// }
+	http.ListenAndServe(fmt.Sprintf(":%s", configs.GetServerPort()), r)
 }

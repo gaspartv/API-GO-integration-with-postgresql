@@ -7,7 +7,7 @@ import (
 	"strconv"
 
 	"github.com/gaspartv/API-GO-integration-with-postgresql/models"
-	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/v5"
 )
 
 func Delete(w http.ResponseWriter, r *http.Request) {
